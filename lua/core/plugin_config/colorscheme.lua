@@ -1,3 +1,3 @@
 vim.o.termguicolors = true
-vim.cmd [[ colorscheme jellybeans ]]
+vim.cmd [[ colorscheme catppuccin ]]
 

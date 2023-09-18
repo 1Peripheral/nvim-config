@@ -36,6 +36,12 @@ vim.api.nvim_set_keymap('i', '[', '[]<left>', { noremap = true})
 vim.keymap.set('n', '<c-s>', ':w<CR>') -- Save
 vim.keymap.set('n', '<c-q>', ':wqa<CR>') -- Save and quit
 
+-- Insert Mode Navigation
+vim.keymap.set('i', '<c-k>', '<Up>') 
+vim.keymap.set('i', '<c-j>', '<Down>') 
+vim.keymap.set('i', '<c-l>', '<Right>') 
+vim.keymap.set('i', '<c-h>', '<Left>') 
+
 -- Navigate Buffers
 vim.api.nvim_set_keymap("n", "<S-l>", ":bnext<CR>", opts)
 vim.api.nvim_set_keymap("n", "<S-h>", ":bprevious<CR>", opts)

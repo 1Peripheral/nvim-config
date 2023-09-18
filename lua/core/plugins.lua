@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
    use 'nanotech/jellybeans.vim'
    use 'cocopon/iceberg.vim'
    use 'sainnhe/edge'
+   use { "catppuccin/nvim", as = "catppuccin" }
    -------
    use 'nvim-tree/nvim-tree.lua'
    use 'nvim-tree/nvim-web-devicons'
