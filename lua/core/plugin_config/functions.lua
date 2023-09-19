@@ -12,26 +12,37 @@ function formatFile()
 
    -- For Go Files
    if (fileExtension == "go") then
-      print("This is a go file")
       command = string.format("!gofmt -w %s", vim.fn.expand('%:p'))
       vim.cmd(command)
 
    -- For Python Files
    elseif (fileExtension == "py") then 
-      print("This is a python file")
       command = string.format("!black %s", vim.fn.expand('%:p'))
       vim.cmd(command)
 
    -- For C/C++ Files
    elseif (fileExtension == "c" or fileExtension == "cpp") then 
-      print("This is a python file")
       command = string.format("!indent -br -bl -hnl %s", vim.fn.expand('%:p'))
       vim.cmd(command)
 
    else
       print(string.format("No formatter detected for %s files", fileExtension))
    end
+end
 
+function runProgram()
+   local fileExtension = getFileExtension(vim.fn.bufname("%"))
+   local command = "" 
+
+   if (fileExtension == "go") then
+      command = string.format("!go run %s", vim.fn.expand('%:p'))
+      vim.cmd(command)
+
+   -- For Python Files
+   elseif (fileExtension == "py") then 
+      command = string.format("!python3 %s", vim.fn.expand('%:p'))
+      vim.cmd(command)
+   end
 end
 
 function getFileExtension(filename)
@@ -42,5 +53,7 @@ function getFileExtension(filename)
         return nil -- No extension found
     end
 end
+
+
 
 

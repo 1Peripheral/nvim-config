@@ -38,6 +38,9 @@ vim.keymap.set('n', '<c-q>', ':wqa<CR>') -- Save and quit
 
 -- Format Files
 vim.api.nvim_set_keymap('n', '<F3>', ':lua formatFile()<CR>', { noremap = true, silent = true })
+ 
+-- Run Program
+vim.api.nvim_set_keymap('n', '<F6>', ':lua runProgram()<CR>', { noremap = true, silent = true })
 
 -- Insert Mode Navigation
 vim.keymap.set('i', '<c-k>', '<Up>') 
