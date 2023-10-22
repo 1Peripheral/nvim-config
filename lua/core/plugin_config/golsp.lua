@@ -18,5 +18,5 @@ vim.api.nvim_exec([[
   autocmd FileType go nmap gd <Cmd>GoDef<CR>
   autocmd FileType go nmap gr <Cmd>GoRename<CR>
   autocmd FileType go nmap <C-k> <Cmd>GoLspHover<CR>
-]], true)
+]], true
 

@@ -38,7 +38,7 @@ return require('packer').startup(function(use)
    use 'hrsh7th/cmp-nvim-lsp'
    use 'L3MON4D3/LuaSnip'
    use 'neovim/nvim-lspconfig'
-
+   use "williamboman/mason-lspconfig.nvim"
    use {"williamboman/mason.nvim",
       opts = {
          ensure_installed = {
