@@ -99,11 +99,6 @@ _G.packer_plugins = {
     path = "/home/box/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
-  edge = {
-    loaded = true,
-    path = "/home/box/.local/share/nvim/site/pack/packer/start/edge",
-    url = "https://github.com/sainnhe/edge"
-  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/home/box/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
@@ -118,11 +113,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/box/.local/share/nvim/site/pack/packer/start/jellybeans.vim",
     url = "https://github.com/nanotech/jellybeans.vim"
-  },
-  ["lualine.nvim"] = {
-    loaded = true,
-    path = "/home/box/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,

@@ -20,6 +20,7 @@ vim.opt.shiftround = true
 vim.opt.expandtab = true
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.laststatus = 3
 
 
 -- Clear Search Highlight
@@ -58,5 +59,6 @@ vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", opts)
 vim.api.nvim_set_keymap("n", "<leader>v", ":vsplit<CR>", {noremap = true})
 
 -- Run makefiles
-vim.api.nvim_set_keymap("n", "<F5>", ":!make<CR>", {noremap = true})
+vim.api.nvim_set_keymap("n", "<F5>", ":make<CR>", {noremap = true})
+
 

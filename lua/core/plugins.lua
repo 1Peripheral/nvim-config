@@ -17,12 +17,11 @@ return require('packer').startup(function(use)
    use 'ellisonleao/gruvbox.nvim'
    use 'nanotech/jellybeans.vim'
    use 'cocopon/iceberg.vim'
-   use 'sainnhe/edge'
    use { "catppuccin/nvim", as = "catppuccin" }
    -------
    use 'nvim-tree/nvim-tree.lua'
    use 'nvim-tree/nvim-web-devicons'
-   use 'nvim-lualine/lualine.nvim'
+   -- use 'nvim-lualine/lualine.nvim'
    use 'nvim-treesitter/nvim-treesitter'
    use 'terrortylor/nvim-comment'
    use {
