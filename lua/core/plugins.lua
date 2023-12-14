@@ -16,7 +16,7 @@ return require('packer').startup(function(use)
    -- Colorscheme 
    use 'ellisonleao/gruvbox.nvim'
    use 'nanotech/jellybeans.vim'
-   use 'cocopon/iceberg.vim'
+   use 'lunarvim/darkplus.nvim'
    use { "catppuccin/nvim", as = "catppuccin" }
    -------
    use 'nvim-tree/nvim-tree.lua'

@@ -8,7 +8,7 @@ end
 function formatFile() 
    -- Getting the extension of current buffered file .
    local fileExtension = getFileExtension(vim.fn.bufname("%"))
-   local command = "" 
+   local command = ""
 
    -- For Go Files
    if (fileExtension == "go") then
@@ -16,13 +16,17 @@ function formatFile()
       vim.cmd(command)
 
    -- For Python Files
-   elseif (fileExtension == "py") then 
+   elseif (fileExtension == "py") then
       command = string.format("!black %s", vim.fn.expand('%:p'))
       vim.cmd(command)
 
    -- For C/C++ Files
-   elseif (fileExtension == "c" or fileExtension == "cpp") then 
+   elseif (fileExtension == "c" or fileExtension == "cpp") then
       command = string.format("!indent -br -bl -hnl %s", vim.fn.expand('%:p'))
+      vim.cmd(command)
+
+   elseif (fileExtension == "rs") then
+      command = string.format("!cargo fmt")
       vim.cmd(command)
 
    else
@@ -32,14 +36,14 @@ end
 
 function runProgram()
    local fileExtension = getFileExtension(vim.fn.bufname("%"))
-   local command = "" 
+   local command = ""
 
    if (fileExtension == "go") then
       command = string.format("!go run %s", vim.fn.expand('%:p'))
       vim.cmd(command)
 
    -- For Python Files
-   elseif (fileExtension == "py") then 
+   elseif (fileExtension == "py") then
       command = string.format("!python3 %s", vim.fn.expand('%:p'))
       vim.cmd(command)
    end
