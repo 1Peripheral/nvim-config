@@ -61,4 +61,9 @@ vim.api.nvim_set_keymap("n", "<leader>v", ":vsplit<CR>", {noremap = true})
 -- Run makefiles
 vim.api.nvim_set_keymap("n", "<F5>", ":make<CR>", {noremap = true})
 
-
+-- Tab Navigation
+vim.api.nvim_set_keymap("n", "<leader>1", "1gt<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>2", "2gt<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>3", "3gt<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>4", "4gt<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>5", "5gt<CR>", opts)
