@@ -3,7 +3,7 @@ local util = require "lspconfig/util"
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-   ensure_installed = {"lua_ls", "rust_analyzer","jdtls", "clangd", "pyright", "tsserver", "julials"}
+   ensure_installed = {"lua_ls", "rust_analyzer", "clangd", "jedi_language_server", "tsserver", "julials"}
 })
 
 vim.api.nvim_create_autocmd('LspAttach', {
@@ -38,8 +38,6 @@ lspconfig.lua_ls.setup({})
 -- C/C++
 lspconfig.clangd.setup({})
 
-lspconfig.jdtls.setup({})
-
 -- Go lsp
 lspconfig.gopls.setup{
    cmd = {"gopls"},
@@ -60,7 +58,7 @@ lspconfig.gopls.setup{
 lspconfig.tsserver.setup({})
 
 -- Python language server
-lspconfig.pyright.setup({})
+lspconfig.jedi_language_server.setup({})
 
 -- Elixir language server
 lspconfig.julials.setup({})

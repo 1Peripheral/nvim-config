@@ -14,8 +14,8 @@ vim.opt.autoread = true
 vim.opt.fillchars = {eob = " "}
 
 -- use spaces for tabs and whatnot
-vim.opt.tabstop = 3
-vim.opt.shiftwidth = 3
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.shiftround = true
 vim.opt.expandtab = true
 vim.opt.number = true
@@ -39,7 +39,7 @@ vim.keymap.set('n', '<c-q>', ':wqa<CR>') -- Save and quit
 
 -- Format Files
 vim.api.nvim_set_keymap('n', '<F3>', ':lua formatFile()<CR>', { noremap = true, silent = true })
- 
+
 -- Run Program
 vim.api.nvim_set_keymap('n', '<F6>', ':lua runProgram()<CR>', { noremap = true, silent = true })
 
