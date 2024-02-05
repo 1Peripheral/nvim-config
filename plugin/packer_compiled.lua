@@ -99,15 +99,21 @@ _G.packer_plugins = {
     path = "/home/box/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["darkplus.nvim"] = {
+    loaded = true,
+    path = "/home/box/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
+    url = "https://github.com/lunarvim/darkplus.nvim"
+  },
+  ["doom-one.nvim"] = {
+    loaded = true,
+    needs_bufread = false,
+    path = "/home/box/.local/share/nvim/site/pack/packer/opt/doom-one.nvim",
+    url = "https://github.com/NTBBloodbath/doom-one.nvim"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/home/box/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
-  },
-  ["iceberg.vim"] = {
-    loaded = true,
-    path = "/home/box/.local/share/nvim/site/pack/packer/start/iceberg.vim",
-    url = "https://github.com/cocopon/iceberg.vim"
   },
   ["jellybeans.vim"] = {
     loaded = true,
@@ -177,6 +183,13 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Setup for: doom-one.nvim
+time([[Setup for doom-one.nvim]], true)
+try_loadstring("\27LJ\2\n·\1\0\0\2\0\6\0\0176\0\0\0009\0\1\0+\1\1\0=\1\2\0006\0\0\0009\0\1\0+\1\2\0=\1\3\0006\0\0\0009\0\1\0+\1\1\0=\1\4\0006\0\0\0009\0\1\0+\1\2\0=\1\5\0K\0\1\0\31doom_one_enable_treesitter\29doom_one_italic_comments\29doom_one_terminal_colors\29doom_one_cursor_coloring\6g\bvim\0", "setup", "doom-one.nvim")
+time([[Setup for doom-one.nvim]], false)
+time([[packadd for doom-one.nvim]], true)
+vim.cmd [[packadd doom-one.nvim]]
+time([[packadd for doom-one.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

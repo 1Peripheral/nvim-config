@@ -1,3 +1,2 @@
 vim.o.termguicolors = true
-vim.cmd [[ colorscheme darkplus ]]
-
+vim.cmd [[ colorscheme catppuccin-mocha ]]
