@@ -15,4 +15,3 @@ require("nvim-options")
 require("lazy").setup("plugins")
 require("colorscheme")
 require("functions")
-

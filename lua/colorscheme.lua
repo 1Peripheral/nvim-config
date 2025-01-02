@@ -1,3 +1,3 @@
-vim.cmd("colorscheme carbonfox")
+vim.cmd("colorscheme tokyonight")
 
 vim.opt.termguicolors = true

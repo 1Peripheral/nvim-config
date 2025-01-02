@@ -6,7 +6,10 @@ return {
   -- use a release tag to download pre-built binaries
   version = '*',
   opts = {
-    keymap = { preset = 'default' },
+    keymap = { 
+      preset = 'default',
+      ['<Tab>'] = { 'accept' },
+    },
 
     appearance = {
       nerd_font_variant = 'mono'

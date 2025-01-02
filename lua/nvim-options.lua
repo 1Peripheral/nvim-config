@@ -48,3 +48,7 @@ vim.api.nvim_set_keymap('i', '\'', '\'\'<left>', { noremap = true})
 vim.api.nvim_set_keymap('i', '{', '{}<left>', { noremap = true})
 vim.api.nvim_set_keymap('i', '(', '()<left>', { noremap = true})
 vim.api.nvim_set_keymap('i', '[', '[]<left>', { noremap = true})
+
+
+-- Exit terminal mode with Ctrl + [
+vim.api.nvim_set_keymap('t', '<C-[>', '<C-\\><C-N>', { noremap = true, silent = true })
