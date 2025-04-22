@@ -36,8 +36,8 @@ return {
         capabilities = capabilities
       })
 
-      lspconfig.zls.setup({
-        capabilities = capabilities
+      lspconfig.rust_analyzer.setup({
+        capabilities = capabilities 
       })
 
       lspconfig.pyright.setup({
@@ -45,10 +45,6 @@ return {
       })
 
       lspconfig.lua_ls.setup({
-        capabilities = capabilities
-      })
-
-      lspconfig.csharp_ls.setup({
         capabilities = capabilities
       })
 
@@ -61,10 +57,6 @@ return {
       })
 
       lspconfig.cssls.setup({
-        capabilities = capabilities
-      })
-
-      lspconfig.csharp_ls.setup({
         capabilities = capabilities
       })
 

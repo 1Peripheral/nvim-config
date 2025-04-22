@@ -1,3 +1,3 @@
-vim.cmd("colorscheme carbonfox")
+vim.cmd("colorscheme vague")
 
 vim.opt.termguicolors = true
